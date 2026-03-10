@@ -30,6 +30,18 @@ const grouped = groupBy(people, (p) => p.dept);
 // }
 ```
 
+## Development
+
+```bash
+npm install       # Install dependencies
+npm run build     # Build the library
+npm run dev       # Build in watch mode
+npm run test      # Run tests
+npm run test:watch # Run tests in watch mode
+npm run typecheck # Type check with tsc
+npm run lint      # Validate package with publint and attw
+```
+
 ## License
 
 MIT
