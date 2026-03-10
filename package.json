@@ -1,6 +1,6 @@
 {
   "name": "@trevortu/ts-utils",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A type-safe Typescript utility library",
   "type": "module",
   "main": "./dist/index.cjs",
@@ -26,7 +26,11 @@
     "lint": "publint && attw --pack",
     "prepublishOnly": "npm run build && npm run lint"
   },
-  "keywords": ["typescript", "utility", "library"],
+  "keywords": [
+    "typescript",
+    "utility",
+    "library"
+  ],
   "author": "Trevor Tu",
   "license": "MIT",
   "repository": {
