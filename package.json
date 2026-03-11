@@ -1,6 +1,6 @@
 {
   "name": "@trevortu/ts-utils",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "A type-safe Typescript utility library",
   "type": "module",
   "main": "./dist/index.cjs",
