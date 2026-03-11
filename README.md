@@ -43,6 +43,19 @@ const picked = pick(user, ["name", "email"]);
 // { name: "Alice", email: "alice@example.com" }
 ```
 
+### `debounce`
+
+Delays function execution until after a pause. Returns a Promise-based debounced function with a `.cancel()` method.
+
+```ts
+import { debounce } from "@trevortu/ts-utils";
+
+const search = debounce((query: string) => fetchResults(query), 300);
+
+const result = await search("hello"); // fires after 300ms of no calls
+search.cancel(); // cancels pending invocation
+```
+
 ## Development
 
 ```bash
