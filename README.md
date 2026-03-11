@@ -30,6 +30,19 @@ const grouped = groupBy(people, (p) => p.dept);
 // }
 ```
 
+### `pick`
+
+Picks specific keys from an object.
+
+```ts
+import { pick } from "@trevortu/ts-utils";
+
+const user = { name: "Alice", age: 30, email: "alice@example.com" };
+
+const picked = pick(user, ["name", "email"]);
+// { name: "Alice", email: "alice@example.com" }
+```
+
 ## Development
 
 ```bash
