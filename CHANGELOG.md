@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.3.0
+
+- Add `deepFreeze` utility function with recursive readonly types and circular reference protection
+
 ## 0.2.0
 
 - Add `pick` utility function

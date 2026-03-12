@@ -56,6 +56,17 @@ const result = await search("hello"); // fires after 300ms of no calls
 search.cancel(); // cancels pending invocation
 ```
 
+### `deepFreeze`
+
+Recursively freezes an object and all nested objects. Returns a `DeepReadonly` type. Handles circular references.
+
+```ts
+import { deepFreeze } from "@trevortu/ts-utils";
+
+const config = deepFreeze({ api: { url: "https://example.com", retries: 3 } });
+config.api.retries = 5; // TypeScript error!
+```
+
 ## Development
 
 ```bash
