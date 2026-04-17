@@ -67,6 +67,17 @@ const config = deepFreeze({ api: { url: "https://example.com", retries: 3 } });
 config.api.retries = 5; // TypeScript error!
 ```
 
+### `toPascalCase`
+
+Capitalises the first letter of each word and lowercases the rest.
+
+```ts
+import { toPascalCase } from "@trevortu/ts-utils";
+
+toPascalCase("hello world"); // "Hello World"
+toPascalCase("FOO_BAR baz"); // "Foo_Bar Baz"
+```
+
 ## Development
 
 ```bash

@@ -3,6 +3,7 @@
 ## 0.3.0
 
 - Add `deepFreeze` utility function with recursive readonly types and circular reference protection
+- Add `toPascalCase` utility function
 
 ## 0.2.0
 
